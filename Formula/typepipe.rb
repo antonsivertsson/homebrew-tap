@@ -12,7 +12,7 @@ class Typepipe < Formula
   version "0.0.2"
 
   def install
-    system "swiftc", 'main.swift Version.swift', '-o', 'typepipe'
+    system "swiftc", 'main.swift', 'Version.swift', '-o', 'typepipe'
     bin.install "#{buildpath}/typepipe"
   end
 end
