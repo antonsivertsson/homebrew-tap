@@ -5,6 +5,9 @@
 # typepipe.rb
 class Typepipe < Formula
   env :std
+  depends_on :macos
+  depends_on macos: :sonoma
+  depends_on "swift"
   desc "Spotlight like application for personal use"
   homepage "https://github.com/antonsivertsson/typepipe"
   url "https://github.com/antonsivertsson/typepipe/archive/refs/tags/v0.0.2.tar.gz"
